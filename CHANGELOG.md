@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.14.3] - 2019-05-09
+### Changed
+- Fix heterogenous pools (broken with 2.14.1)
+
 ## [2.14.2] - 2019-05-07
 ### Added
 - Cache timezone with the pool and in the conn struct, too.

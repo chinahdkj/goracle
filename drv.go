@@ -425,10 +425,8 @@ func (d *drv) openConn(P ConnectionParams) (*conn, error) {
 			//Proxy authenticated connections to database will be provided by methods with context
 			c.timeZone = dp.timeZone
 			c.tzOffSecs = dp.tzOffSecs
-			if !P.HeterogeneousPool {
-				if err := c.acquireConn("", ""); err != nil {
-					return nil, err
-				}
+			if err := c.acquireConn("", ""); err != nil {
+				return nil, err
 			}
 			err := c.init()
 			if err == nil {
