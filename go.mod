@@ -1,4 +1,4 @@
-module gopkg.in/goracle.v2
+module github.com/chinahdkj/goracle
 
 require (
 	github.com/go-kit/kit v0.8.0
