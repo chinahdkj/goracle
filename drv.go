@@ -659,7 +659,7 @@ type ConnectionParams struct {
 // String returns the string representation of ConnectionParams.
 // The password is replaced with a "SECRET" string!
 func (P ConnectionParams) String() string {
-	return P.string(true, false)
+	return P.string(true, true)
 }
 
 // StringNoClass returns the string representation of ConnectionParams, without class info.
