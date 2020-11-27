@@ -4,5 +4,5 @@
 
 // +build require
 
-// Package embed contains required external dependencies from ODPI-C
-package embed
+// Package src contains required external dependencies from ODPI-C
+package src
